@@ -1,0 +1,436 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Many Labs 2},
+            pdfauthor={Richard Klein  LIP/PC2S   Université Grenoble Alpes},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Many Labs 2}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \subtitle{Investigating Variation in Replicability across Sample and Setting}
+  \author{Richard Klein LIP/PC2S Université Grenoble Alpes}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2018-12-10 (updated: 2018-12-10)}
+
+
+\begin{document}
+\maketitle
+
+class: center, middle
+
+\section{Many Labs 2}\label{many-labs-2}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Cause for Concern}\label{cause-for-concern}
+
+--
+
+\subsection{.center{[}{]}}\label{center}
+
+\subsection{.center{[}{]}}\label{center-1}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Flexibility in Data
+Analysis}\label{flexibility-in-data-analysis}
+
+.center{[}\url{http://fivethirtyeight.com/features/science-isnt-broken}{]}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Flexibility in Data
+Analysis}\label{flexibility-in-data-analysis-1}
+
+.center{[}\url{http://fivethirtyeight.com/features/science-isnt-broken}{]}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Flexibility in Data
+Analysis}\label{flexibility-in-data-analysis-2}
+
+.center{[}\url{http://fivethirtyeight.com/features/science-isnt-broken}{]}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Failures to Replicate}\label{failures-to-replicate}
+
+--
+
+\begin{itemize}
+\item
+  \texttt{Reproducibility\ Project:\ Psychology} (OSC, 2015)\\
+\item ~
+  \subsection{\textasciitilde{}40/100 studies
+  replicated}\label{studies-replicated}
+\item
+  \texttt{Social\ Sciences\ Replication\ Project} (Camerer et al., 2018)
+\item
+  13/21 replicated
+\item ~
+  \subsection{All from Science and
+  Nature}\label{all-from-science-and-nature}
+\item
+  \texttt{Multiple\ large-scale\ Registered\ Reports}
+\item
+  POPS/AMPPS Registered Replication Reports
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Failures to Replicate}\label{failures-to-replicate-1}
+
+--
+
+\begin{itemize}
+\item ~
+  \subsection{What we know: Many studies are failing to
+  replicate}\label{what-we-know-many-studies-are-failing-to-replicate}
+\item ~
+  \subsection{Why? Not sure}\label{why-not-sure}
+\item ~
+  \subsection{Could be false positives}\label{could-be-false-positives}
+\item
+  Could be many other reasons:
+\item
+  Moderators (known/unknown)
+\item
+  Lack of care/expertise
+\item
+  Sensitivity of effects to sample/context
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Many Labs Projects}\label{many-labs-projects}
+
+--
+
+Each ML project examines a different aspect of replication. Each
+question requires data colletion at multiple labs.\\
+- \texttt{Many\ Labs\ 1} (Klein et al., 2014)\\
+- 10/13 successful replications - Little variation between samples --
+
+\begin{itemize}
+\item
+  \texttt{Many\ Labs\ 2} (Klein et al., in press)
+\item ~
+  \subsection{Discussing today}\label{discussing-today}
+\item
+  \texttt{Many\ Labs\ 3} (Ebersole et al., 2016)
+\item
+  3/10 successful replications
+\item ~
+  \subsection{Little variation across
+  semester}\label{little-variation-across-semester}
+\item
+  \texttt{Many\ Labs\ 4} (Klein et al., in prep)
+\item
+  Terror Management Theory-specific
+\item ~
+  \subsection{\texorpdfstring{Compare expert replications vs
+  ``in-house''
+  replications}{Compare expert replications vs in-house replications}}\label{compare-expert-replications-vs-in-house-replications}
+\item
+  \texttt{Many\ Labs\ 5} (Ebersole et al., in prep)
+\item
+  Follow-up to Reproducibility Project
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Many Labs 2}\label{many-labs-2-1}
+
+--
+
+\subsection{Like Many Labs 1, but a much stronger
+test:}\label{like-many-labs-1-but-a-much-stronger-test}
+
+\begin{itemize}
+\item ~
+  \subsection{Goal: Replicate many different studies all around the
+  world and compare if they vary based on the sample of data
+  collection.}\label{goal-replicate-many-different-studies-all-around-the-world-and-compare-if-they-vary-based-on-the-sample-of-data-collection.}
+\item
+  Replicated 28 studies
+\item
+  Split across two study ``packages'' due to length
+\item
+  Computerized in Qualtrics
+\item ~
+  \subsection{Randomized study order, presented
+  back-to-back}\label{randomized-study-order-presented-back-to-back}
+\item
+  Which studies?
+\item
+  Structured selection process by committee. Documented: osf.io/8cd4r
+\item
+  Sought open nominations for studies
+\item
+  Emphasized impact (citations, etc.), diversity of content, possibility
+  for variability across sites
+\item
+  But substantial practical constraints: Short, able to be computerized
+\item
+  Authors could decline to be replicated
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Many Labs 2}\label{many-labs-2-2}
+
+\begin{longtable}[]{@{}r@{}}
+\toprule
+\begin{minipage}[b]{0.03\columnwidth}\raggedleft\strut
+- Registered Replication Report at AMPPS: - Each study reviewed and
+approved by original authors or other experts - Analysis plan(s)
+specified in advance (osf.io/c97pd/) - Open data and materials\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.03\columnwidth}\raggedleft\strut
+- Administer packages across 125 samples - Slate 1: 13 studies
+administered in each of 61 labs - Slate 2: 15 studies administered in
+each of 64 labs - Sites (mostly) randomly assigned to slates - Minimum
+of 80 participants per site - 15,305 participants total - Much more
+diverse\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\section{Many Labs 1 map}\label{many-labs-1-map}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Many Labs 2 map}\label{many-labs-2-map}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Many Labs 2 Results}\label{many-labs-2-results}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Many Labs 2 Results}\label{many-labs-2-results-1}
+
+\begin{longtable}[]{@{}l@{}}
+\toprule
+\begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+- 14/28 successful replications - p \textless{} .0001, non-trivial
+effect size, same direction as original - One weakly supported, p = .03
+but near-zero effect size\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+- 75\% has smaller effect size than original - Median original d = 0.60
+- Median replication d = 0.15\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{itemize}
+\tightlist
+\item
+  No evidence that the order of the studies mattered
+\item
+  In general, didn't matter if the study came first, last, or in any
+  other position.
+\item
+  Same as ML1 and ML3
+\end{itemize}
+
+--
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Many Labs 2 Heterogeneity}\label{many-labs-2-heterogeneity}
+
+\begin{longtable}[]{@{}r@{}}
+\toprule
+\begin{minipage}[b]{0.03\columnwidth}\raggedleft\strut
+- Q statistic: (\textasciitilde{} significance test for variation across
+sites exceeding chance) - 11/28 (39\%) showed significant heterogeneity
+- Nearly all from larger-effects studies\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.03\columnwidth}\raggedleft\strut
+- I²: - 36\% showed at least medium heterogeneity - Likely not an
+appropriate measure in this case: - See \url{osf.io/frbuv} (Marcel van
+Assen), \url{Datacolada.org/63}, Borenstein+Higgins\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{itemize}
+\tightlist
+\item
+  Tau is probably best
+\item
+  SD across samples in the unit of the effect size (after accounting for
+  sampling error)
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+.center{[}{]}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Discussion}\label{discussion}
+
+\begin{itemize}
+\item ~
+  \subsection{Lack of sensitivity to
+  sample/context}\label{lack-of-sensitivity-to-samplecontext}
+\item ~
+  \subsection{Not reasonable to discount replications by default based
+  on
+  sample}\label{not-reasonable-to-discount-replications-by-default-based-on-sample}
+\item ~
+  \subsection{Need to test moderators}\label{need-to-test-moderators}
+\item ~
+  \subsection{BUT: Mostly student samples, mostly short computerized
+  studies}\label{but-mostly-student-samples-mostly-short-computerized-studies}
+\item
+  Replication rate aligns with others
+\item ~
+  \subsection{Meaningful?}\label{meaningful}
+\item ~
+  \subsection{Many studies replicate
+  robustly}\label{many-studies-replicate-robustly}
+
+  \subsection{-Overall takeaways
+  (personally):}\label{overall-takeaways-personally}
+\item ~
+  \subsection{Robust replicability is a feasible goal (for many
+  studies)}\label{robust-replicability-is-a-feasible-goal-for-many-studies}
+\item ~
+  \subsection{\texorpdfstring{Nudges me towards ``false-positive''
+  explanation for replication failures (in
+  general)}{Nudges me towards false-positive explanation for replication failures (in general)}}\label{nudges-me-towards-false-positive-explanation-for-replication-failures-in-general}
+\item
+  Reinforces need for preregistration/Registered Reports
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+class: center, middle
+
+\section{Thanks!}\label{thanks}
+
+Special thanks to co-leads Fred Hasselman, Michelangelo Vianello, and
+Brian Nosek + 186 other co-authors.
+
+Questions/comments?
+
+~~~~~~
+
+
+\end{document}
